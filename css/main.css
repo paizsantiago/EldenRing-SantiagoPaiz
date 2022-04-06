@@ -189,18 +189,19 @@ footer{
 
 /* media queries index*/
 
-@media only screen and (max-width:1368px){
+@media only screen and (max-width:1400px){
     .containerBackground{
         background-position:right;
     }
 
     .subtitulo{
         padding-top: 3rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
 
     .subtituloParrafo{
         font-size: 1.1rem;
+        margin: 1rem;
     }
 
     .span0{
@@ -213,7 +214,7 @@ footer{
     }
 
     .trailer{
-        height: 30vh;
+        min-height: 60vh;
     }
 
     .pagFooter{
