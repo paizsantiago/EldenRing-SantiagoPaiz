@@ -245,7 +245,7 @@ footer{
     }
 
     .containerTrailer{
-        height: 80%;
+        height: 80vh;
         background-position: center top;
     }
 
@@ -321,19 +321,19 @@ footer{
 
     .tituloImagen{
         width: 80%;
-
+        height: 100%;
     }
 
     .subtitulo{
-        font-size: .8rem;
-        padding-top: 2.5rem;
+        font-size: .7rem;
+        padding-top: 2.3rem;
     }
 
     .subtituloParrafo{
-        font-size: .7rem;
+        font-size: .6rem;
         width: 80vw;
         text-align: center;
-        line-height: 1.6rem;
+        line-height: 1.3rem;
         margin: 0;
     }
 
@@ -348,7 +348,7 @@ footer{
     }
 
     .containerTrailer2{
-        height: 60vh;
+        min-height: 80vh;
     }
 
     .trailer{
@@ -365,6 +365,8 @@ footer{
         font-size: .9rem;
     }
 }
+
+
 
 
 /* html lore */
