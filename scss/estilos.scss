@@ -1,0 +1,374 @@
+
+@import 'utilities/variables';
+
+
+@font-face {
+    font-family: 'OptimusPrincepsSemiBold' ;
+    src: url('../font/OptimusPrincepsSemiBold.ttf') format('truetype');
+
+}
+
+// reset
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'OptimusPrincepsSemiBold', sans-serif;
+}
+
+    /* modificaciones generales */
+    .menuItem{
+        display: inline-block;
+        padding: 2rem;
+        font-size: 1.1rem;
+        transition: .8s;
+        word-spacing: 0.2rem;
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    
+    // .menuItem:hover{
+    //     transform: scale(1.05);
+    //     color: #a9905b;
+    // } 
+
+    a{
+        color: #e2e0dc;  
+        text-decoration: none;
+        &:hover{
+            color: $goldColor;
+        }
+    }
+    
+    // a:hover{
+        
+    // }
+    
+    .logoMobile{
+        display: inline-block;
+        padding: 1rem;
+    }
+
+    .buttonBurger{
+        border: 0 ;
+    }
+
+    .colorLink{
+        font-size: 1.2rem;
+        color: $fontColor !important;
+        text-decoration: none;
+        margin: 1.3rem;
+        transition: 0.5s;
+        &:hover{
+            color: $goldColor !important;
+            transform: scale(1.03);
+        }
+    }
+
+    // .colorLink:hover{
+    //     color: #a9905b !important;
+    //     transform: scale(1.03);
+    // }
+
+    .pruebaNav{
+        flex-grow: 0;
+    }
+
+    .containerMenu{
+        background-image: $headerFooterColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .pagFooter{
+        text-align: center;
+        background-image: $headerFooterColor;
+        padding: 1rem;
+        color: $fontColor;
+        word-spacing: .3rem;
+    }
+    .pagFooter{
+        h2,h3{
+            margin: .3rem;
+        font-size: 1.1rem;
+        } 
+    } 
+
+    .pagFooter {
+        i{
+            margin: .5rem;
+            font-size: 1.5rem;
+            transition: .5s;
+            &:hover{
+                transform: scale(1.2);
+                color: $goldColor;
+            }
+        }
+    }
+
+    // .pagFooter i:hover{
+    //     transform: scale(1.2);
+    //     color: #a9905b;
+    // }
+
+    /* html home/index */
+
+    .containerGeneral{
+        height: 100%;
+        grid-template-columns: 1fr;
+        grid-row: repeat(3,1fr);
+        grid-template-areas: "header"
+                            "main"
+                            "footer";
+    }
+    header{
+        grid-area: header;
+    }
+    main{
+        grid-area: main;
+    }
+    footer{
+        grid-area: footer;
+    }
+    .containerBackground{
+        height: 100vh;
+        background-image: linear-gradient(rgba(8, 8, 8, 0.534), rgb(0, 0, 0)),url(../img/EldenRingBackground.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /* animacion fade  */
+    @keyframes fadeImgTitulo {
+        from{
+            opacity: 0.1%;
+        }
+        to{
+            opacity: 100%;
+        }
+    }
+    .tituloImagen{
+        width: 100vh;
+        animation-name: fadeImgTitulo;
+        animation-iteration-count: initial;
+        animation-duration: 6s;
+    }
+    .containerDecoration{
+        background-color: rgb(0, 0, 0);
+        /* background-color: red; */
+        padding: 1rem;
+    }
+    .containerTrailer{
+        background-image:linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.609)), url(../img/eldenRingFondo.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    .containerTrailer2{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+    }
+    .subtitulo{
+        color: $goldColor;
+        padding-top: 5rem;
+        font-size: 2rem;
+        text-align: center;
+        word-spacing: .5rem;
+        
+    }
+    .subtituloParrafo{
+        font-size: 1.3rem;
+        color: $fontColor;
+        text-align:start;
+        width: 50%;
+        word-spacing: .5rem;
+        line-height: 2rem;
+        padding-bottom: 10rem;
+    }
+    .span0{
+        color: $goldColor;
+        font-size: 1.4rem;
+        text-shadow: 0rem 0rem .1rem $goldColor;
+    }
+    .trailer{
+        box-shadow: 0rem 0rem 1rem black;
+        margin-bottom: 10rem;
+        width: 40%;
+        height: 50%;
+        border-radius: .2rem;
+    }
+
+    /* media queries index*/
+
+    @media only screen and (max-width:1400px){
+        .containerBackground{
+            background-position:right;
+        }
+
+        .logoMobile{
+            padding: 0;
+        }
+
+        .subtitulo{
+            padding-top: 3rem;
+            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .subtituloParrafo{
+            font-size: 1.1rem;
+            margin: 1rem;
+        }
+
+        .containerTrailer{
+            height: 80%;
+        }
+
+        .trailer{
+            min-height: 40vh;
+        }
+
+        .pagFooter{
+            h2,h3{
+                font-size: .7rem;
+            }
+        }
+        .pagFooter{
+            i{
+                margin: .2rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width:992px){
+    
+        .logoMobile{
+            height: 15vh;
+            padding: 0;
+        }
+        .menuItem{
+            font-size: .8rem;
+        }
+        .containerBackground{
+            height: 80%;
+        }
+        .tituloImagen{
+            width: 80%;
+        }
+        .containerTrailer{
+            height: 80%;
+            background-position: center top;
+        }
+        .containerTrailer2{
+            flex-direction: column-reverse;
+        }
+        .subtitulo{
+            margin-bottom: 1.5rem;
+            font-size: 1.7rem;
+        }
+        .subtituloParrafo{
+            font-size: .8rem;
+            margin: 1rem;
+            padding: 0;
+            text-align: center;
+        }
+        .span0{
+            font-size: .9rem;
+        }
+        .trailer{
+            display: block;
+            min-height: 40vh;
+            width: 60%;
+            margin-top: 3rem;
+        }
+        .pagFooter{
+            font-size: .5rem;
+        }
+        .pagFooter {
+            i{
+                margin: .2rem;
+                font-size: 1.2rem;
+            }
+        }
+    }
+
+    @media only screen and (max-width:700px){
+        .menuItem{
+            display: inline-block;
+            padding: .6rem;
+            font-size: .9rem;
+        }
+        
+        .logoMenu{
+            display: inline-block;
+            padding: 1rem;
+        }
+        .logoMobile{
+            min-height: 10vh;
+        }
+        
+        .menu{
+            display: inline-block;
+            padding: .8rem;
+        }
+        .containerGeneral{
+            height: 80vh;
+        }
+        .containerBackground{
+            height: 80%;
+            width: 100%;
+            background-position: center;
+        }
+        .tituloImagen{
+            width: 80%;
+            height: 100%;
+        }
+        .subtitulo{
+            font-size: .7rem;
+            padding-top: 2.3rem;
+        }
+        .subtituloParrafo{
+            font-size: .6rem;
+            width: 80vw;
+            text-align: center;
+            line-height: 1.3rem;
+            margin: .5rem;
+        }
+        .span0{
+            font-size: .7rem;
+            margin: 0.5rem;
+        }
+        .containerTrailer{
+            height: 80%;
+            background-position: center;
+        }
+        .containerTrailer2{
+            height: 70%;
+        }
+        .trailer{
+            display: none;
+        }
+        .pagFooter{
+            h2,h3{
+                font-size: .6rem;
+                word-spacing: .2rem;
+            }
+        }
+        .pagFooter {
+            i{
+                margin: .2rem;
+                font-size: .9rem;
+            }
+        }
+    }
