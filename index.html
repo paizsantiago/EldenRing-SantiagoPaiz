@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- link de css -->
     <link rel="stylesheet" href="css/main.css">
     <!-- link del icono en la pestaña-->
@@ -15,22 +17,37 @@
 <body>
 
     <div class="containerGeneral">
-         <!-- menu + logo -->
-        <header>
-                <nav class="containerMenu">
-                  <div class="logoMenu">
-                      <img src="img/logo2prueba2.png" alt="logo-elden-ring" class="logoMobile">
-                  </div>
-                  
-                  <ul class="menu">
-                      <li class="menuItem"><a href="index.html">Home</a></li>
-                      <li class="menuItem"><a href="pages/lore.html">Lore</a></li>
-                      <li class="menuItem"><a href="pages/clases.html">Characters</a></li>
-                      <li class="menuItem"><a href="pages/titulosSimilares.html">Related Titles</a></li>
-                      <li class="menuItem"><a href="pages/soporte.html">Support</a></li>
-                  </ul>
-                </nav>
-
+         <header>
+            <!-- menu -->
+           <nav class="navbar navbar-expand-lg navbar-dark" style="background-image: linear-gradient(to top, #080808, #000000);">
+                    <div class="container-fluid">                     
+                            <div>
+                              <a class="navbar-brand" href="index.html"><img src="../img/logo2prueba2.png" alt="logo-elden-ring" class="logoMobile"></a>
+                            </div>
+                            <button class="navbar-toggler navbar-dark buttonBurger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                              <span class="navbar-toggler-icon"></span>
+                            </button>                  
+                            <div class="collapse navbar-collapse pruebaNav" id="navbarSupportedContent">
+                              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                  <a class="nav-link colorLink" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link colorLink" href="pages/lore.html">Lore</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link colorLink" href="pages/clases.html">Characters</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link colorLink" href="pages/titulosSimilares.html">Related Titles</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link colorLink" href="pages/soporte.html">Support</a>
+                                </li>
+                              </ul>
+                            </div>
+                    </div>
+                  </nav>
         </header>
         <!-- home + trailer -->
         <main>
@@ -65,5 +82,10 @@
         </footer>
 
     </div>
+
+    <!-- link de js --> 
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>

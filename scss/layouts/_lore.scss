@@ -1,0 +1,149 @@
+
+// inicio
+
+.containerLore{
+    background-image: linear-gradient(rgb(8, 8, 8), rgba(8, 8, 8, 0.671)), url(../img/prophet_confessor_vagabond_warrior_hero_bandit_samurai_astrologer_prisoner_wretch_4k_hd_elden_ring.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #e3e0da;    
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "parrafo1 imagen1"
+                        "imagen2 parrafo2";
+    gap: 1rem;
+}
+
+.tituloLore{
+    text-align: center;
+    padding: .8rem;
+    font-size: 3rem;
+    color: $goldColor;
+    grid-area: titulo;
+    word-spacing: .7rem;
+}
+.parrafoLore1{
+font-size: 1.2rem;
+text-align: start;
+grid-area: parrafo1;
+padding: 1.5rem;
+margin: 3rem;
+text-shadow: 0rem 0rem .1rem $fontColor;
+word-spacing: .5rem;
+line-height: 1.4;
+background-image: linear-gradient(to right, #080808, transparent );
+border-radius: 0.1rem;
+align-self: center;
+justify-self: center;
+}
+.imagenLore1{
+width: 90%;
+height: 50%;
+grid-area: imagen1;
+box-shadow: 0rem 0rem 1rem rgb(0, 0, 0);
+justify-self: center;
+align-self: center;
+border-radius: 0.1rem;
+}
+.parrafolore2{
+grid-area: parrafo2;
+font-size: 1.2rem;
+text-align: start;
+padding: 1.5rem;
+border-radius: -.3rem;
+margin: 3rem;
+text-shadow: 0rem 0rem .1rem $fontColor;
+word-spacing: .5rem;
+line-height: 1.4;
+background-image: linear-gradient(to left, #080808, transparent );
+border-radius: 0.1rem;
+align-self: center;
+}
+
+.imagenLore2{
+width: 90%;
+height: 50%;
+grid-area: imagen2;
+box-shadow: 0rem 0rem 1rem rgb(0, 0, 0);
+justify-self: center;
+align-self: center;
+border-radius: 0.1rem;
+}
+
+.span1{
+color: $goldColor;
+text-shadow: 0rem 0rem .1rem $goldColor;
+}
+
+/* media queries lore html */
+
+@media only screen and (max-width:700px){   
+    .menuItem{
+        display: inline-block;
+        padding: .5rem;
+        font-size: .7rem;
+    }
+
+    .logoMenu{
+        display: inline-block;
+        padding: 1rem;
+    }
+    .logoMobile{
+        height: 3.5rem;
+    }
+
+    .menu{
+        display: inline-block;
+        padding: .8rem;
+    }
+    .containerGeneral{
+        height: 80vh;
+        width: 100%;
+    }
+    .containerLore{
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .tituloLore{
+        font-size: 1.4rem;
+        padding:2rem;
+    }
+    .parrafoLore1{
+        margin: 1rem;
+        font-size: .8rem;
+        line-height: 1.1rem;
+        width: 80vw;
+        background-image: linear-gradient(to bottom, #080808, transparent );
+    }
+    .imagenLore1{
+        width: 100%;
+        height: 100%;
+        margin: 2rem;
+        margin-top: 0;
+    }
+    .parrafolore2{
+        margin: 1rem;
+        font-size: .8rem;
+        line-height: 1.1rem;
+        width: 80vw;
+        background-image: linear-gradient(to bottom, #080808, transparent );
+    }
+    .imagenLore2{
+        width: 100%;
+        height: 100%;
+        margin: 2rem;
+        margin-top: 0;
+    }
+    .pagFooter{
+        font-size: .6rem;
+        word-spacing: .2rem;
+    }
+    .pagFooter {
+        i{
+            margin: .2rem;
+            font-size: .9rem;
+        }
+        
+    }
+}

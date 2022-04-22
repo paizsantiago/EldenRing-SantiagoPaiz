@@ -1,0 +1,145 @@
+
+// inicio
+
+.containerTitulosSimilares{
+    background-image:linear-gradient(rgb(8, 8, 8), rgba(8, 8, 8, 0.76)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+.h1TituloSimilares{
+    color:$goldColor;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 3rem;
+    background-image: linear-gradient(to bottom, #080808,#000000);
+    margin: 0;
+}
+.imgTitulosSimilares{
+    display: flex;
+}
+.containerImgDS1{
+    display: inline-block;
+    width: 30%;
+}
+.imgDS1{
+    height: 100%;
+    width: 100%;
+}
+.containerInfoDS1{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #000000, #080808);
+    display: block;
+    width: 70%;
+    justify-content: flex-start;
+    align-content: center;
+}
+.tituloJuego1{
+    color: $fontColor;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.containerParrafoJuego1{
+    color: $fontColor;
+    font-size: 1.2rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+}
+.imgTitulosSimilares2{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.containerImgDS2{
+    display: inline-block;
+    width: 30%;
+    height: 60vh;
+}
+.imgDS2{
+    height: 60vh;
+    width: 100%;
+}
+.containerInfoDS2{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
+    background-position: center;
+    display: block;
+    width: 70%;
+    justify-content: flex-start;
+    align-content: center;
+}
+.tituloJuego2{
+    color: $fontColor;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.containerParrafoJuego2{
+    color: $fontColor;
+    font-size: 1.2rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+}
+.containerImgDS3{
+    display: inline-block;
+    width: 30%;
+    height: 60vh;
+}
+.imgDS3{
+    height: 60vh;
+    width: 100%;
+}
+.containerInfoDS3{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #000000, #080808);
+    display: block;
+    width: 70%;
+    justify-items: flex-start;
+    align-items: center;
+}
+.tituloJuego3{
+    color: $fontColor;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.containerParrafoJuego3{
+    color: $fontColor;
+    font-size: 1.2rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+}
+.containerImgBloodBorne{
+    display: inline-block;
+    width: 30%;
+    height: 60%;
+}
+.containerInfoBB{
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
+    background-position: center;
+    display: block;
+    width: 70%;
+    justify-items: flex-start;
+    align-items: center;
+}
+.imgBloodBorne{
+    height: 60vh;
+    width: 100%;
+}
+.tituloJuego4{
+    color: $fontColor;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.containerParrafoJuego4{
+    color: $fontColor;
+    font-size: 1.2rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+}

@@ -1,0 +1,79 @@
+// inicio
+
+.contenedorSoporte{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.tituloContacto{
+    color: $goldColor;
+}
+.form{
+    width: 50vw;
+    height: 100vh;
+    background-color: #000000;
+    color: $fontColor;
+    text-decoration: none;
+    padding: 2rem;
+}
+form legend{
+    margin: .5rem;
+}
+form div{
+    margin: 4.4rem;
+}
+.imgContacto{
+    width: 50vw;
+    height: 100vh;
+    background-image:url('../img/fotoSoporte.jpg');
+    background-position: center;
+    background-size: cover;
+}
+/* media queries html support */
+@media only screen and (max-width:700px){   
+    .menuItem{
+        display: inline-block;
+        padding: .5rem;
+        font-size: .6rem;
+    }
+    
+    .logoMenu{
+        display: inline-block;
+        padding: 1rem;
+    }
+    .logoMobile{
+        height: 3.5rem;
+    }
+    
+    .menu{
+        display: inline-block;
+        padding: .8rem;
+    }
+    .containerGeneral{
+        height: 80vh;
+        width: 100%;
+    }
+    .contenedorSoporte{
+        flex-direction: column;
+    }
+    .imgContacto{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        height: 80%;
+        font-size: .7rem;
+        margin: 0;
+        padding: 1rem;
+    }
+    .pagFooter{
+        font-size: .5rem;
+        word-spacing: .2rem;
+    }
+    .pagFooter {
+        i{
+            margin: .2rem;
+            font-size: .9rem;
+        }
+    }
+}

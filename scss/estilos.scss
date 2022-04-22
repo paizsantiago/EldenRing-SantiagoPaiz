@@ -1,5 +1,9 @@
 
-@import 'utilities/variables';
+@import "utilities/variables";
+@import "layouts/lore";
+@import "layouts/characters";
+@import "layouts/relatedTitles";
+@import "layouts/support";
 
 
 @font-face {
@@ -29,10 +33,6 @@
         }
     }
     
-    // .menuItem:hover{
-    //     transform: scale(1.05);
-    //     color: #a9905b;
-    // } 
 
     a{
         color: #e2e0dc;  
@@ -42,9 +42,6 @@
         }
     }
     
-    // a:hover{
-        
-    // }
     
     .logoMobile{
         display: inline-block;
@@ -67,10 +64,6 @@
         }
     }
 
-    // .colorLink:hover{
-    //     color: #a9905b !important;
-    //     transform: scale(1.03);
-    // }
 
     .pruebaNav{
         flex-grow: 0;
@@ -109,10 +102,6 @@
         }
     }
 
-    // .pagFooter i:hover{
-    //     transform: scale(1.2);
-    //     color: #a9905b;
-    // }
 
     /* html home/index */
 
