@@ -60,11 +60,11 @@
         transition: 0.5s;
         &:hover{
             color: $goldColor !important;
+            text-shadow: $shadowText;
             transform: scale(1.1);
         }
         
     }
-
 
     .pruebaNav{
         flex-grow: 0;
@@ -87,14 +87,14 @@
     .pagFooter{
         h2,h3{
             margin: .3rem;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         } 
     } 
 
     .pagFooter {
         i{
             margin: .5rem;
-            font-size: 1.5rem;
+            font-size: 1.7rem;
             transition: .5s;
             &:hover{
                 transform: scale(1.2);
@@ -171,13 +171,13 @@
     .subtitulo{
         color: $goldColor;
         padding-top: 5rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
         text-align: center;
         word-spacing: .5rem;
-        
+        text-shadow: $shadowText;
     }
     .subtituloParrafo{
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         color: $fontColor;
         text-align:start;
         width: 50%;
@@ -230,13 +230,13 @@
 
         .pagFooter{
             h2,h3{
-                font-size: .7rem;
+                font-size: .9rem;
             }
         }
         .pagFooter{
             i{
                 margin: .2rem;
-                font-size: 1.2rem;
+                font-size: 1.4rem;
             }
         }
     }
@@ -244,7 +244,7 @@
     @media only screen and (max-width:992px){
     
         .logoMobile{
-            height: 15vh;
+            height: 6rem;
             padding: 0;
         }
         .menuItem{
@@ -305,7 +305,7 @@
             padding: 1rem;
         }
         .logoMobile{
-            min-height: 4vh;
+            height: 5rem;
         }
         
         .menu{
@@ -313,7 +313,7 @@
             padding: .8rem;
         }
         .containerGeneral{
-            height: 80vh;
+            min-height: 100vh;
         }
         .containerBackground{
             min-height: 80vh;
@@ -358,7 +358,7 @@
         .pagFooter {
             i{
                 margin: .2rem;
-                font-size: .9rem;
+                font-size: 1.1rem;
             }
         }
     }

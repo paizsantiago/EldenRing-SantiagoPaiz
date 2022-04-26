@@ -14,7 +14,8 @@
   font-size: 3rem;
   color: #a9905b;
   grid-area: titulo;
-  word-spacing: .7rem; }
+  word-spacing: .7rem;
+  text-shadow: 0 0 0.15rem #a9905b; }
 
 .parrafoLore1 {
   font-size: 1.2rem;
@@ -32,7 +33,7 @@
 
 .imagenLore1 {
   width: 90%;
-  height: 50%;
+  height: 60%;
   grid-area: imagen1;
   box-shadow: 0rem 0rem 1rem black;
   justify-self: center;
@@ -55,7 +56,7 @@
 
 .imagenLore2 {
   width: 90%;
-  height: 50%;
+  height: 60%;
   grid-area: imagen2;
   box-shadow: 0rem 0rem 1rem black;
   justify-self: center;
@@ -67,19 +68,92 @@
   text-shadow: 0rem 0rem 0.1rem #a9905b; }
 
 /* media queries lore html */
-@media only screen and (max-width: 700px) {
-  .menuItem {
+@media only screen and (max-width: 1400px) {
+  .logoMenu {
     display: inline-block;
-    padding: .5rem;
-    font-size: .7rem; }
+    padding: 1rem; }
+  .containerGeneral {
+    height: 80vh;
+    width: 100%; }
+  .containerLore {
+    background-position: center;
+    display: flex;
+    flex-direction: column; }
+  .tituloLore {
+    font-size: 1.8rem;
+    padding: 2rem; }
+  .parrafoLore1 {
+    margin: 1rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    width: 80vw;
+    background-image: linear-gradient(to bottom, #080808, transparent);
+    text-align: center; }
+  .imagenLore1 {
+    width: 70%;
+    height: 40%;
+    margin: 2rem;
+    margin-top: 0; }
+  .parrafolore2 {
+    margin: 1rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    width: 80vw;
+    background-image: linear-gradient(to bottom, #080808, transparent);
+    text-align: center; }
+  .imagenLore2 {
+    width: 70%;
+    height: 40%;
+    margin: 2rem;
+    margin-top: 0; } }
+
+@media only screen and (max-width: 992px) {
   .logoMenu {
     display: inline-block;
     padding: 1rem; }
   .logoMobile {
-    height: 3.5rem; }
-  .menu {
+    height: 6rem; }
+  .containerGeneral {
+    height: 80vh;
+    width: 100%; }
+  .containerLore {
+    background-position: center;
+    display: flex;
+    flex-direction: column; }
+  .tituloLore {
+    font-size: 1.6rem;
+    padding: 2rem; }
+  .parrafoLore1 {
+    margin: 1rem;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    width: 80vw;
+    background-image: linear-gradient(to bottom, #080808, transparent);
+    text-align: center; }
+  .imagenLore1 {
+    width: 60%;
+    height: 30%;
+    margin: 2rem;
+    margin-top: 0; }
+  .parrafolore2 {
+    margin: 1rem;
+    font-size: .9rem;
+    line-height: 1.1rem;
+    width: 80vw;
+    background-image: linear-gradient(to bottom, #080808, transparent);
+    text-align: center; }
+  .imagenLore2 {
+    width: 60%;
+    height: 30%;
+    margin: 2rem;
+    margin-top: 0; } }
+
+@media only screen and (max-width: 700px) {
+  .logoMenu {
     display: inline-block;
-    padding: .8rem; }
+    padding: 1rem; }
+  .logoMobile {
+    height: 5rem; }
   .containerGeneral {
     height: 80vh;
     width: 100%; }
@@ -95,7 +169,8 @@
     font-size: .8rem;
     line-height: 1.1rem;
     width: 80vw;
-    background-image: linear-gradient(to bottom, #080808, transparent); }
+    background-image: linear-gradient(to bottom, #080808, transparent);
+    text-align: center; }
   .imagenLore1 {
     width: 100%;
     height: 100%;
@@ -106,18 +181,13 @@
     font-size: .8rem;
     line-height: 1.1rem;
     width: 80vw;
-    background-image: linear-gradient(to bottom, #080808, transparent); }
+    background-image: linear-gradient(to bottom, #080808, transparent);
+    text-align: center; }
   .imagenLore2 {
     width: 100%;
     height: 100%;
     margin: 2rem;
-    margin-top: 0; }
-  .pagFooter {
-    font-size: .6rem;
-    word-spacing: .2rem; }
-  .pagFooter i {
-    margin: .2rem;
-    font-size: .9rem; } }
+    margin-top: 0; } }
 
 .containerClases {
   background-image: linear-gradient(#080808, rgba(8, 8, 8, 0.644)), url(../img/backgraundClases.jpg);
@@ -134,7 +204,8 @@
   text-align: center;
   padding: 1.3rem;
   font-size: 3rem;
-  margin: 0; }
+  margin: 0;
+  text-shadow: 0 0 0.15rem #a9905b; }
 
 .containerClases img {
   width: 15rem;
@@ -201,18 +272,11 @@
 
 /* media queries html clases  */
 @media only screen and (max-width: 700px) {
-  .menuItem {
-    display: inline-block;
-    padding: .5rem;
-    font-size: .6rem; }
   .logoMenu {
     display: inline-block;
     padding: 1rem; }
   .logoMobile {
     height: 3.5rem; }
-  .menu {
-    display: inline-block;
-    padding: .8rem; }
   .containerGeneral {
     height: 80vh;
     width: 100%; }
@@ -228,13 +292,7 @@
     margin: .3rem; }
   .containerClases img {
     height: 15rem;
-    width: 11rem; }
-  .pagFooter {
-    font-size: .5rem;
-    word-spacing: .2rem; }
-  .pagFooter i {
-    margin: .2rem;
-    font-size: .9rem; } }
+    width: 11rem; } }
 
 .containerTitulosSimilares {
   background-image: linear-gradient(#080808, rgba(8, 8, 8, 0.76)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
@@ -248,12 +306,13 @@
   padding: 1.5rem;
   font-size: 3rem;
   background-image: linear-gradient(to bottom, #080808, #000000);
-  margin: 0; }
+  margin: 0;
+  text-shadow: 0 0 0.15rem #a9905b; }
 
 .imgTitulosSimilares {
   display: flex; }
 
-.containerImgDS1 {
+.containerImg1 {
   display: inline-block;
   width: 30%; }
 
@@ -261,7 +320,7 @@
   height: 100%;
   width: 100%; }
 
-.containerInfoDS1 {
+.containerInfo1 {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to right, #000000, #080808);
@@ -273,7 +332,8 @@
 .tituloJuego1 {
   color: #e3e0da;
   padding: 2rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-shadow: 0 0 0.15rem #e3e0da; }
 
 .containerParrafoJuego1 {
   color: #e3e0da;
@@ -286,16 +346,15 @@
   display: flex;
   flex-direction: row-reverse; }
 
-.containerImgDS2 {
+.containerImg2 {
   display: inline-block;
-  width: 30%;
-  height: 60vh; }
+  width: 30%; }
 
 .imgDS2 {
   height: 60vh;
   width: 100%; }
 
-.containerInfoDS2 {
+.containerInfo2 {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
@@ -308,7 +367,8 @@
 .tituloJuego2 {
   color: #e3e0da;
   padding: 2rem;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  text-shadow: 0 0 0.15rem #e3e0da; }
 
 .containerParrafoJuego2 {
   color: #e3e0da;
@@ -317,66 +377,205 @@
   word-spacing: 0.3rem;
   line-height: 2rem; }
 
-.containerImgDS3 {
-  display: inline-block;
-  width: 30%;
-  height: 60vh; }
-
 .imgDS3 {
   height: 60vh;
   width: 100%; }
-
-.containerInfoDS3 {
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(to right, #000000, #080808);
-  display: block;
-  width: 70%;
-  justify-items: flex-start;
-  align-items: center; }
-
-.tituloJuego3 {
-  color: #e3e0da;
-  padding: 2rem;
-  font-size: 1.5rem; }
-
-.containerParrafoJuego3 {
-  color: #e3e0da;
-  font-size: 1.2rem;
-  padding: 2rem;
-  word-spacing: 0.3rem;
-  line-height: 2rem; }
-
-.containerImgBloodBorne {
-  display: inline-block;
-  width: 30%;
-  height: 60%; }
-
-.containerInfoBB {
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
-  background-position: center;
-  display: block;
-  width: 70%;
-  justify-items: flex-start;
-  align-items: center; }
 
 .imgBloodBorne {
   height: 60vh;
   width: 100%; }
 
-.tituloJuego4 {
-  color: #e3e0da;
-  padding: 2rem;
-  font-size: 1.5rem; }
+.imgDemonS {
+  height: 60vh;
+  width: 100%; }
 
-.containerParrafoJuego4 {
-  color: #e3e0da;
-  font-size: 1.2rem;
-  padding: 2rem;
-  word-spacing: 0.3rem;
-  line-height: 2rem; }
+.imgSekiro {
+  height: 60vh;
+  width: 100%; }
+
+@media only screen and (max-width: 1400px) {
+  .imgTitulosSimilares {
+    flex-direction: row; }
+  .containerImg1 {
+    display: inline-block;
+    width: 30%;
+    height: 30rem;
+    background-image: url(../../img/darkSouls1.jpeg); }
+  .imgDS1 {
+    opacity: 0; }
+  .containerInfo1 {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #000000, #080808);
+    display: block;
+    width: 70%;
+    justify-content: flex-start;
+    align-content: center;
+    max-height: 30%; }
+  .tituloJuego1 {
+    color: #e3e0da;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center; }
+  .containerParrafoJuego1 {
+    color: #e3e0da;
+    font-size: 1rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+    text-align: center; }
+  .imgDS3 {
+    height: 100%; }
+  .imgBloodBorne {
+    height: 60%; }
+  .imgDS2 {
+    height: 100%; }
+  .imgDemonS {
+    height: 100%; }
+  .imgSekiro {
+    height: 100%; }
+  .imgTitulosSimilares2 {
+    flex-direction: row-reverse; }
+  .containerImg2 {
+    display: inline-block;
+    width: 100%; }
+  .containerInfo2 {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
+    background-position: center;
+    display: block;
+    width: 70%;
+    justify-content: flex-start;
+    align-content: center; }
+  .tituloJuego2 {
+    color: #e3e0da;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center; }
+  .containerParrafoJuego2 {
+    color: #e3e0da;
+    font-size: 1rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+    text-align: center; } }
+
+@media only screen and (max-width: 992px) {
+  .imgTitulosSimilares {
+    flex-direction: column; }
+  .containerImg1 {
+    display: inline-block;
+    width: 100%;
+    height: 40%; }
+  .containerInfo1 {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #000000, #080808);
+    display: block;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center; }
+  .tituloJuego1 {
+    color: #e3e0da;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center; }
+  .containerParrafoJuego1 {
+    color: #e3e0da;
+    font-size: 1rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+    text-align: center; }
+  .imgDS3 {
+    height: 100%; }
+  .imgBloodBorne {
+    height: 40%; }
+  .imgDS2 {
+    height: 100%; }
+  .imgDemonS {
+    height: 100%; }
+  .imgSekiro {
+    height: 100%; }
+  .imgTitulosSimilares2 {
+    flex-direction: column; }
+  .containerImg2 {
+    display: inline-block;
+    width: 100%; }
+  .containerInfo2 {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
+    background-position: center;
+    display: block;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center; }
+  .tituloJuego2 {
+    color: #e3e0da;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center; }
+  .containerParrafoJuego2 {
+    color: #e3e0da;
+    font-size: 1rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+    text-align: center; } }
+
+@media only screen and (max-width: 700px) {
+  .imgTitulosSimilares {
+    flex-direction: column; }
+  .containerImg1 {
+    display: inline-block;
+    width: 100%; }
+  .containerInfo1 {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, #000000, #080808);
+    display: block;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center; }
+    .containerInfo1 h2 {
+      border-bottom: 0.2rem solid #a9905b;
+      padding-bottom: 1.3rem; }
+  .tituloJuego1 {
+    color: #e3e0da;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center; }
+  .containerParrafoJuego1 {
+    color: #e3e0da;
+    font-size: 1rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+    text-align: center; }
+  .imgTitulosSimilares2 {
+    flex-direction: column; }
+  .containerImg2 {
+    display: inline-block;
+    width: 100%;
+    height: 60vh; }
+  .containerInfo2 {
+    background-position: center; }
+  .tituloJuego2 {
+    color: #e3e0da;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center; }
+  .containerParrafoJuego2 {
+    color: #e3e0da;
+    font-size: 1rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+    text-align: center; }
+  .imgBloodBorne {
+    height: 100%; } }
 
 .contenedorSoporte {
   display: flex;
@@ -482,6 +681,7 @@ a {
   transition: 0.5s; }
   .colorLink:hover {
     color: #a9905b !important;
+    text-shadow: 0 0 0.15rem #a9905b;
     transform: scale(1.1); }
 
 .pruebaNav {
@@ -502,11 +702,11 @@ a {
 
 .pagFooter h2, .pagFooter h3 {
   margin: .3rem;
-  font-size: 1.1rem; }
+  font-size: 1.2rem; }
 
 .pagFooter i {
   margin: .5rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   transition: .5s; }
   .pagFooter i:hover {
     transform: scale(1.2);
@@ -573,12 +773,13 @@ footer {
 .subtitulo {
   color: #a9905b;
   padding-top: 5rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
-  word-spacing: .5rem; }
+  word-spacing: .5rem;
+  text-shadow: 0 0 0.15rem #a9905b; }
 
 .subtituloParrafo {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   color: #e3e0da;
   text-align: start;
   width: 50%;
@@ -616,14 +817,14 @@ footer {
   .trailer {
     min-height: 40vh; }
   .pagFooter h2, .pagFooter h3 {
-    font-size: .7rem; }
+    font-size: .9rem; }
   .pagFooter i {
     margin: .2rem;
-    font-size: 1.2rem; } }
+    font-size: 1.4rem; } }
 
 @media only screen and (max-width: 992px) {
   .logoMobile {
-    height: 15vh;
+    height: 6rem;
     padding: 0; }
   .menuItem {
     font-size: .8rem; }
@@ -666,12 +867,12 @@ footer {
     display: inline-block;
     padding: 1rem; }
   .logoMobile {
-    min-height: 4vh; }
+    height: 5rem; }
   .menu {
     display: inline-block;
     padding: .8rem; }
   .containerGeneral {
-    height: 80vh; }
+    min-height: 100vh; }
   .containerBackground {
     min-height: 80vh;
     width: 100%;
@@ -703,4 +904,4 @@ footer {
     word-spacing: .2rem; }
   .pagFooter i {
     margin: .2rem;
-    font-size: .9rem; } }
+    font-size: 1.1rem; } }

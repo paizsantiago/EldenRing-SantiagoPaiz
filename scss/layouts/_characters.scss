@@ -14,6 +14,7 @@
     padding: 1.3rem;
     font-size: 3rem;
     margin: 0;
+    text-shadow: $shadowText;
   }
   .containerClases img{
     width: 15rem;
@@ -109,12 +110,7 @@
      /* media queries html clases  */
 
      @media only screen and (max-width:700px){   
-        .menuItem{
-            display: inline-block;
-            padding: .5rem;
-            font-size: .6rem;
-        }
-        
+
         .logoMenu{
             display: inline-block;
             padding: 1rem;
@@ -123,10 +119,6 @@
             height: 3.5rem;
         }
         
-        .menu{
-            display: inline-block;
-            padding: .8rem;
-        }
         .containerGeneral{
             height: 80vh;
             width: 100%;
@@ -153,17 +145,6 @@
             img{
                 height: 15rem;
                 width: 11rem;
-            }
-            
-        }
-        .pagFooter{
-            font-size: .5rem;
-            word-spacing: .2rem;
-        }
-        .pagFooter {
-            i{
-                margin: .2rem;
-                font-size: .9rem;
             }
             
         }

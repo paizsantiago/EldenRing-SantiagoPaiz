@@ -21,6 +21,7 @@
     color: $goldColor;
     grid-area: titulo;
     word-spacing: .7rem;
+    text-shadow: $shadowText;
 }
 .parrafoLore1{
 font-size: 1.2rem;
@@ -38,7 +39,7 @@ justify-self: center;
 }
 .imagenLore1{
 width: 90%;
-height: 50%;
+height: 60%;
 grid-area: imagen1;
 box-shadow: 0rem 0rem 1rem rgb(0, 0, 0);
 justify-self: center;
@@ -62,7 +63,7 @@ align-self: center;
 
 .imagenLore2{
 width: 90%;
-height: 50%;
+height: 60%;
 grid-area: imagen2;
 box-shadow: 0rem 0rem 1rem rgb(0, 0, 0);
 justify-self: center;
@@ -77,25 +78,122 @@ text-shadow: 0rem 0rem .1rem $goldColor;
 
 /* media queries lore html */
 
-@media only screen and (max-width:700px){   
-    .menuItem{
+@media only screen and (max-width:1400px){   
+
+    .logoMenu{
         display: inline-block;
-        padding: .5rem;
-        font-size: .7rem;
+        padding: 1rem;
     }
+  
+    .containerGeneral{
+        height: 80vh;
+        width: 100%;
+    }
+    .containerLore{
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .tituloLore{
+        font-size: 1.8rem;
+        padding:2rem;
+    }
+    .parrafoLore1{
+        margin: 1rem;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        width: 80vw;
+        background-image: linear-gradient(to bottom, #080808, transparent );
+        text-align: center;
+    }
+    .imagenLore1{
+        width: 70%;
+        height: 40%;
+        margin: 2rem;
+        margin-top: 0;
+    }
+    .parrafolore2{
+        margin: 1rem;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        width: 80vw;
+        background-image: linear-gradient(to bottom, #080808, transparent );
+        text-align: center;
+    }
+    .imagenLore2{
+        width: 70%;
+        height: 40%;
+        margin: 2rem;
+        margin-top: 0;
+    }
+
+}
+
+@media only screen and (max-width:992px){   
 
     .logoMenu{
         display: inline-block;
         padding: 1rem;
     }
     .logoMobile{
-        height: 3.5rem;
+        height: 6rem;
     }
 
-    .menu{
-        display: inline-block;
-        padding: .8rem;
+    .containerGeneral{
+        height: 80vh;
+        width: 100%;
     }
+    .containerLore{
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .tituloLore{
+        font-size: 1.6rem;
+        padding:2rem;
+    }
+    .parrafoLore1{
+        margin: 1rem;
+        font-size: .9rem;
+        line-height: 1.1rem;
+        width: 80vw;
+        background-image: linear-gradient(to bottom, #080808, transparent );
+        text-align: center;
+    }
+    .imagenLore1{
+        width: 60%;
+        height: 30%;
+        margin: 2rem;
+        margin-top: 0;
+    }
+    .parrafolore2{
+        margin: 1rem;
+        font-size: .9rem;
+        line-height: 1.1rem;
+        width: 80vw;
+        background-image: linear-gradient(to bottom, #080808, transparent );
+        text-align: center;
+    }
+    .imagenLore2{
+        width: 60%;
+        height: 30%;
+        margin: 2rem;
+        margin-top: 0;
+    }
+
+}
+
+
+@media only screen and (max-width:700px){   
+
+    .logoMenu{
+        display: inline-block;
+        padding: 1rem;
+    }
+    .logoMobile{
+        height: 5rem;
+    }
+
     .containerGeneral{
         height: 80vh;
         width: 100%;
@@ -115,6 +213,7 @@ text-shadow: 0rem 0rem .1rem $goldColor;
         line-height: 1.1rem;
         width: 80vw;
         background-image: linear-gradient(to bottom, #080808, transparent );
+        text-align: center;
     }
     .imagenLore1{
         width: 100%;
@@ -128,6 +227,7 @@ text-shadow: 0rem 0rem .1rem $goldColor;
         line-height: 1.1rem;
         width: 80vw;
         background-image: linear-gradient(to bottom, #080808, transparent );
+        text-align: center;
     }
     .imagenLore2{
         width: 100%;
@@ -135,15 +235,5 @@ text-shadow: 0rem 0rem .1rem $goldColor;
         margin: 2rem;
         margin-top: 0;
     }
-    .pagFooter{
-        font-size: .6rem;
-        word-spacing: .2rem;
-    }
-    .pagFooter {
-        i{
-            margin: .2rem;
-            font-size: .9rem;
-        }
-        
-    }
+
 }
