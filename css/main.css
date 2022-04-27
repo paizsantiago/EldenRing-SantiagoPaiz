@@ -1,3 +1,7 @@
+.botonSoporte {
+  border: 0.15rem solid #e3e0da;
+  color: #a9905b; }
+
 .containerLore {
   background-image: linear-gradient(#080808, rgba(8, 8, 8, 0.671)), url(../img/prophet_confessor_vagabond_warrior_hero_bandit_samurai_astrologer_prisoner_wretch_4k_hd_elden_ring.jpg);
   background-position: center;
@@ -591,10 +595,6 @@
     text-align: center; }
   .imgBloodBorne {
     height: 100%; } }
-
-.botonSoporte {
-  border: 0.15rem solid #e3e0da;
-  color: #a9905b; }
 
 .contenedorSoporte {
   display: flex;

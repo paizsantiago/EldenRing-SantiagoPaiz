@@ -17,3 +17,7 @@ $shadows: (
 
 // extends
 
+%borderBotton{
+    border: .15rem solid $fontColor;
+    color: $goldColor;
+}

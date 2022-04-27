@@ -1,12 +1,5 @@
 // inicio
 
-@import "../utilities/powers";
-
-%borderBotton{
-    border: .15rem solid $fontColor;
-    color: $goldColor;
-}
-
 .contenedorSoporte{
     display: flex;
     flex-direction: row-reverse;
