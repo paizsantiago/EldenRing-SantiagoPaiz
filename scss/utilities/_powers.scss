@@ -1,1 +1,19 @@
-//mixin
+//mixins
+
+@import "../utilities/variables";
+
+@mixin flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+// maps
+
+$shadows: (
+    shadowImg: 0rem 0rem 1rem rgb(0, 0, 0),
+    shadowText: (0rem 0rem .1rem $goldColor)
+);
+
+// extends
+

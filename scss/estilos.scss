@@ -1,4 +1,6 @@
+// imports
 
+@import "utilities/powers";
 @import "utilities/variables";
 @import "layouts/lore";
 @import "layouts/characters";
@@ -56,7 +58,7 @@
         font-size: 1.2rem;
         color: $fontColor !important;
         text-decoration: none;
-        margin: 1.3rem;
+        margin: 1.1rem;
         transition: 0.5s;
         &:hover{
             color: $goldColor !important;
@@ -68,13 +70,6 @@
 
     .pruebaNav{
         flex-grow: 0;
-    }
-
-    .containerMenu{
-        background-image: $headerFooterColor;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
     }
 
     .pagFooter{
@@ -99,6 +94,7 @@
             &:hover{
                 transform: scale(1.2);
                 color: $goldColor;
+                text-shadow: 0 0 .1rem $goldColor;
             }
         }
     }
@@ -160,11 +156,9 @@
         height: 100vh;
     }
     .containerTrailer2{
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        height: 100%;
+        @include flex();
         justify-content: space-evenly;
+        height: 100%;  
         flex-wrap: nowrap;
         flex-direction: row-reverse;
     }
@@ -218,14 +212,15 @@
         .subtituloParrafo{
             font-size: 1.1rem;
             margin: 1rem;
+            padding-top: 2rem;
         }
 
         .containerTrailer{
-            height: 80%;
+            height: 100%;
         }
 
         .trailer{
-            min-height: 40vh;
+            min-height: 60vh;
         }
 
         .pagFooter{
@@ -236,7 +231,7 @@
         .pagFooter{
             i{
                 margin: .2rem;
-                font-size: 1.4rem;
+                font-size: 1.5rem;
             }
         }
     }
@@ -294,16 +289,7 @@
     }
 
     @media only screen and (max-width:700px){
-        .menuItem{
-            display: inline-block;
-            padding: .6rem;
-            font-size: .9rem;
-        }
-        
-        .logoMenu{
-            display: inline-block;
-            padding: 1rem;
-        }
+
         .logoMobile{
             height: 5rem;
         }
@@ -326,7 +312,7 @@
         }
         .subtitulo{
             font-size: 1.2rem;
-            padding-top: 2.3rem;
+            padding-top: 2rem;
         }
         .subtituloParrafo{
             font-size: .8rem;
@@ -334,10 +320,12 @@
             text-align: center;
             line-height: 1.3rem;
             margin: .5rem;
+            padding-top: 1.3rem;
         }
         .span0{
             font-size: .8rem;
             margin: 0.5rem;
+            padding-bottom: 1rem;
         }
         .containerTrailer{
             min-height: 80vh;

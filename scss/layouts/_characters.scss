@@ -34,9 +34,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex();
     transition: 1s ease;
     backface-visibility: hidden;
   }
@@ -51,9 +49,7 @@
   }
   
   .backCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex();
     background: rgba( 0, 0, 0, 0.25 );
     backdrop-filter: blur( 11px );
     -webkit-backdrop-filter: blur( 11px );
@@ -109,12 +105,29 @@
 
      /* media queries html clases  */
 
+     @media only screen and (max-width:1400px){
+          .backCard {
+            .stats1{
+                font-size: .8rem;
+                margin: .3rem;
+            }
+            .stats2{
+                font-size: .8rem;
+                margin: .3rem;
+            }
+
+        }
+        .containerClases{
+          img{
+              height: 15rem;
+              width: 11rem;
+          }
+          
+      }
+     }
+
      @media only screen and (max-width:700px){   
 
-        .logoMenu{
-            display: inline-block;
-            padding: 1rem;
-        }
         .logoMobile{
             height: 3.5rem;
         }

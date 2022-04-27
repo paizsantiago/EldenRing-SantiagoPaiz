@@ -24,67 +24,72 @@
     text-shadow: $shadowText;
 }
 .parrafoLore1{
-font-size: 1.2rem;
-text-align: start;
-grid-area: parrafo1;
-padding: 1.5rem;
-margin: 3rem;
-text-shadow: 0rem 0rem .1rem $fontColor;
-word-spacing: .5rem;
-line-height: 1.4;
-background-image: linear-gradient(to right, #080808, transparent );
-border-radius: 0.1rem;
-align-self: center;
-justify-self: center;
+    font-size: 1.2rem;
+    text-align: start;
+    grid-area: parrafo1;
+    padding: 1.5rem;
+    margin: 3rem;
+    text-shadow: 0rem 0rem .1rem $fontColor;
+    word-spacing: .5rem;
+    line-height: 1.4;
+    background-image: linear-gradient(to right, #080808, transparent );
+    border-radius: 0.1rem;
+    align-self: center;
+    justify-self: center;
+    p{
+        margin: .7rem;
+    }
 }
 .imagenLore1{
-width: 90%;
-height: 60%;
-grid-area: imagen1;
-box-shadow: 0rem 0rem 1rem rgb(0, 0, 0);
-justify-self: center;
-align-self: center;
-border-radius: 0.1rem;
+    width: 90%;
+    height: 50%;
+    grid-area: imagen1;
+    box-shadow: map-get($map: $shadows, $key: shadowImg );
+    justify-self: center;
+    align-self: center;
+    border-radius: 0.1rem;
+    object-fit: cover;
 }
 .parrafolore2{
-grid-area: parrafo2;
-font-size: 1.2rem;
-text-align: start;
-padding: 1.5rem;
-border-radius: -.3rem;
-margin: 3rem;
-text-shadow: 0rem 0rem .1rem $fontColor;
-word-spacing: .5rem;
-line-height: 1.4;
-background-image: linear-gradient(to left, #080808, transparent );
-border-radius: 0.1rem;
-align-self: center;
+    grid-area: parrafo2;
+    font-size: 1.2rem;
+    text-align: start;
+    padding: 1.5rem;
+    border-radius: -.3rem;
+    margin: 3rem;
+    text-shadow: map-get($map: $shadows, $key:shadowText);
+    word-spacing: .5rem;
+    line-height: 1.4;
+    background-image: linear-gradient(to left, #080808, transparent );
+    border-radius: 0.1rem;
+    align-self: center;
+    p{
+        margin: .7rem;
+    }
 }
 
 .imagenLore2{
-width: 90%;
-height: 60%;
-grid-area: imagen2;
-box-shadow: 0rem 0rem 1rem rgb(0, 0, 0);
-justify-self: center;
-align-self: center;
-border-radius: 0.1rem;
+    width: 90%;
+    height: 50%;
+    grid-area: imagen2;
+    box-shadow: map-get($map: $shadows, $key: shadowImg );
+    justify-self: center;
+    align-self: center;
+    border-radius: 0.1rem;
+    object-fit: cover;
 }
 
 .span1{
-color: $goldColor;
-text-shadow: 0rem 0rem .1rem $goldColor;
+    color: $goldColor;
+    text-shadow: 0rem 0rem .1rem $goldColor;
+   display: block;
+   margin: .7rem;
 }
 
 /* media queries lore html */
 
-@media only screen and (max-width:1400px){   
+@media only screen and (max-width:1500px){   
 
-    .logoMenu{
-        display: inline-block;
-        padding: 1rem;
-    }
-  
     .containerGeneral{
         height: 80vh;
         width: 100%;
@@ -95,33 +100,40 @@ text-shadow: 0rem 0rem .1rem $goldColor;
         flex-direction: column;
     }
     .tituloLore{
-        font-size: 1.8rem;
+        font-size: 2.7rem;
         padding:2rem;
     }
     .parrafoLore1{
         margin: 1rem;
-        font-size: 1rem;
-        line-height: 1.1rem;
-        width: 80vw;
+        font-size: 1.13rem;
+        line-height: 1.2rem;
+        width: 70vw;
         background-image: linear-gradient(to bottom, #080808, transparent );
         text-align: center;
+        p{
+            margin: 1.5rem;
+        }
     }
+
     .imagenLore1{
-        width: 70%;
+        width: 60%;
         height: 40%;
         margin: 2rem;
         margin-top: 0;
     }
     .parrafolore2{
         margin: 1rem;
-        font-size: 1rem;
-        line-height: 1.1rem;
-        width: 80vw;
+        font-size: 1.13rem;
+        line-height: 1.2rem;
+        width: 70vw;
         background-image: linear-gradient(to bottom, #080808, transparent );
-        text-align: center;
+        text-align:center;
+        p{
+            margin: 1.5rem;
+        }
     }
     .imagenLore2{
-        width: 70%;
+        width: 60%;
         height: 40%;
         margin: 2rem;
         margin-top: 0;

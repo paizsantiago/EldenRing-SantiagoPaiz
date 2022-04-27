@@ -108,42 +108,37 @@
 @media only screen and (max-width:1400px){
     .imgTitulosSimilares{
         flex-direction: row;
+        height: 37rem;
     }
     .containerImg1{
         display: inline-block;
-        width: 30%;
-        height: 30rem;
-        background-image: url(../../img/darkSouls1.jpeg);
+        width: 40%;
     }
 
-    .imgDS1{
-        opacity: 0;
-
-    }
     .containerInfo1{
         display: flex;
         flex-direction: column;
         background-image: linear-gradient(to bottom, #000000, #080808);
         display: block;
-        width: 70%;
+        width: 60%;
         justify-content: flex-start;
         align-content: center;
-        max-height: 30%;
+
     }
     .tituloJuego1{
         color: $fontColor;
-        padding: 2rem;
-        font-size: 1.3rem;
-        text-align: center;
+        padding: 1.7rem 0 0 1.5rem;
+        font-size: 1.2rem;
+        text-align: start;
         
     }
     .containerParrafoJuego1{
         color: $fontColor;
-        font-size: 1rem;
-        padding: 2rem;
+        font-size: .95rem;
+        padding: 1.5rem;
         word-spacing: 0.3rem;
         line-height: 2rem;
-        text-align: center;
+        text-align: start;
     }
 
     .imgDS3{
@@ -151,7 +146,11 @@
     }
 
     .imgBloodBorne{
-        height: 60%;
+        height: 100%;
+    }
+
+    .pruebaBB{
+        height: 40rem;
     }
 
     .imgDS2{
@@ -171,7 +170,7 @@
     }
     .containerImg2{
         display: inline-block;
-        width: 100%;
+        width: 40%;
     }
 
     .containerInfo2{
@@ -180,24 +179,24 @@
         background-image: linear-gradient(to bottom ,rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
         background-position: center;
         display: block;
-        width: 70%;
+        width: 60%;
         justify-content: flex-start;
         align-content: center;
     
     }
     .tituloJuego2{
         color: $fontColor;
-        padding: 2rem;
-        font-size: 1.3rem;
-        text-align: center;
+        padding: 1.7rem 0 0 1.5rem;
+        font-size: 1.2rem;
+        text-align: start;
     }
     .containerParrafoJuego2{
         color: $fontColor;
-        font-size: 1rem;
-        padding: 2rem;
+        font-size: .95rem;
+        padding: 1.5rem;
         word-spacing: 0.3rem;
         line-height: 2rem;
-        text-align: center;
+        text-align: start;
     }
 }
 

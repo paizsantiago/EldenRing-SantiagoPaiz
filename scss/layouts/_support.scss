@@ -1,13 +1,29 @@
 // inicio
 
+@import "../utilities/powers";
+
+%borderBotton{
+    border: .15rem solid $fontColor;
+    color: $goldColor;
+}
+
 .contenedorSoporte{
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    
 }
 .tituloContacto{
     color: $goldColor;
+    text-align: center;
+    text-shadow: $shadowText;
 }
+
+.formulario{
+    display: flex;
+    justify-content: center;
+}
+
 .form{
     width: 50vw;
     height: 100vh;
@@ -15,32 +31,145 @@
     color: $fontColor;
     text-decoration: none;
     padding: 2rem;
+    background-image: linear-gradient(to bottom, $colorPrincipal, black);
+    border-top: .1rem solid rgb(15, 15, 15) ;
 }
-form legend{
-    margin: .5rem;
-}
-form div{
-    margin: 4.4rem;
-}
+
 .imgContacto{
     width: 50vw;
-    height: 100vh;
-    background-image:url('../img/fotoSoporte.jpg');
+    min-height: 100vh;
+    background-image:linear-gradient(to top, black, rgba(0, 0, 0, 0.199)),url('../../img/fotoSoporte.jpg');
     background-position: center;
     background-size: cover;
 }
-/* media queries html support */
-@media only screen and (max-width:700px){   
-    .menuItem{
-        display: inline-block;
-        padding: .5rem;
-        font-size: .6rem;
+
+.inputNombre{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputApellido{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputEmail{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.selectPais{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    label{
+        margin-bottom: .5rem ;
     }
-    
-    .logoMenu{
+}
+
+.inputGenero{
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.botones{
+    margin: 3rem;
+}
+
+input{
+    color: $goldColor;
+    display: block;
+    margin: .5rem 0 .5rem 0;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: .1rem solid rgb(51, 51, 51);
+    transition: .6s ease;
+    cursor: pointer;
+    &:hover{
+        border-bottom: .1rem solid $goldColor;
+    }
+    &:focus{
+        color: $fontColor;
+    }
+}
+
+.seleccGenero{
+    input{
         display: inline-block;
+    }
+}
+
+.botonSoporte{
+    text-decoration: none;
+    margin: 1.5rem;
+    min-width: 9rem;
+    height: 2.5rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    border-radius: .2rem;
+    background: transparent;
+    @extend %borderBotton;
+    background-image: linear-gradient(45deg, $goldColor/1.3 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+    transition: background .7s ease-in-out;
+    &:hover{
+        color: $fontColor;
+        transition: .7s;
+        font-weight: bold;
+        background-position: 0;
+        border: .15rem solid $goldColor;
+    }
+}
+
+
+
+
+
+/* media queries html support */
+
+@media only screen and (max-width:1400px){
+
+    .form{
+        width: 50%;
+        height: 80%;
+        font-size: 1rem;
+        margin: 0;
         padding: 1rem;
     }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media only screen and (max-width:992px){
+    .form{
+        width: 50%;
+        height: 80%;
+        font-size: .9rem;
+        margin: 0;
+        padding: 1rem;
+    }
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:700px){   
+
     .logoMobile{
         height: 3.5rem;
     }
@@ -62,10 +191,18 @@ form div{
     .form{
         width: 100%;
         height: 80%;
-        font-size: .7rem;
+        font-size: .8rem;
         margin: 0;
         padding: 1rem;
     }
+
+    .botones{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .pagFooter{
         font-size: .5rem;
         word-spacing: .2rem;
@@ -73,7 +210,7 @@ form div{
     .pagFooter {
         i{
             margin: .2rem;
-            font-size: .9rem;
+            font-size: 1.1rem;
         }
     }
 }
