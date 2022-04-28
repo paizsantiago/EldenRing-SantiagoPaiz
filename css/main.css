@@ -642,7 +642,7 @@
 .imgContacto {
   width: 50vw;
   min-height: 100vh;
-  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.199)), url("../../img/fotoSoporte.jpg");
+  background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.199)), url("../img/fotoSoporte.jpg");
   background-position: center;
   background-size: cover; }
 
