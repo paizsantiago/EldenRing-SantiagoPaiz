@@ -58,7 +58,7 @@
     width: 30%;
 }
 .imgDS2{
-    height: 60vh;
+    height: 100%;
     width: 100%;
 }
 .containerInfo2{
@@ -86,7 +86,7 @@
 }
 
 .imgDS3{
-    height: 60vh;
+    height: 100%;
     width: 100%;
 }
 
@@ -96,23 +96,23 @@
 }
 
 .imgDemonS{
-    height: 60vh;
+    height: 100%;
     width: 100%;
 }
 
 .imgSekiro{
-    height: 60vh;
+    height: 100%;
     width: 100%;
 }
 
-@media only screen and (max-width:1400px){
+@media only screen and (max-width:1600px){
     .imgTitulosSimilares{
         flex-direction: row;
-        height: 37rem;
     }
     .containerImg1{
         display: inline-block;
-        width: 40%;
+        width: 45%;
+
     }
 
     .containerInfo1{
@@ -120,7 +120,7 @@
         flex-direction: column;
         background-image: linear-gradient(to bottom, #000000, #080808);
         display: block;
-        width: 60%;
+        width: 55%;
         justify-content: flex-start;
         align-content: center;
 
@@ -141,28 +141,39 @@
         text-align: start;
     }
 
+    .imgDS1{
+        height: 100%;
+        object-fit: cover;
+    }
+
     .imgDS3{
         height: 100%;
+        object-fit: cover;
     }
 
     .imgBloodBorne{
         height: 100%;
+
     }
 
     .pruebaBB{
         height: 40rem;
+
     }
 
     .imgDS2{
         height: 100%;
+        object-fit: cover;
     }
 
     .imgDemonS{
         height: 100%;
+        object-fit: cover;
     }
 
     .imgSekiro{
         height: 100%;
+        object-fit: cover;
     }
 
     .imgTitulosSimilares2{
@@ -170,16 +181,16 @@
     }
     .containerImg2{
         display: inline-block;
-        width: 40%;
+        width: 45%;
     }
 
     .containerInfo2{
         display: flex;
         flex-direction: column;
-        background-image: linear-gradient(to bottom ,rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
+        background-image: linear-gradient(to bottom ,rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
         background-position: center;
         display: block;
-        width: 60%;
+        width: 55%;
         justify-content: flex-start;
         align-content: center;
     
@@ -197,6 +208,7 @@
         word-spacing: 0.3rem;
         line-height: 2rem;
         text-align: start;
+        display: flex;
     }
 }
 
@@ -204,11 +216,19 @@
 @media only screen and (max-width:992px){
     .imgTitulosSimilares{
         flex-direction: column;
+        height: 60%;
+    }
+
+    .h1TituloSimilares{
+        font-size: 2.5rem;
     }
     .containerImg1{
         display: inline-block;
         width: 100%;
-        height: 40%;
+        min-height: 100%;
+    }
+    .imgDS1{
+        height: 100%;
     }
     .containerInfo1{
         display: flex;
@@ -218,6 +238,10 @@
         width: 100%;
         justify-content: flex-start;
         align-content: center;
+        h2{
+            border-bottom: .2rem solid $goldColor ;
+            padding-bottom: 1.3rem;
+        }
         
     }
     .tituloJuego1{
@@ -229,7 +253,7 @@
     }
     .containerParrafoJuego1{
         color: $fontColor;
-        font-size: 1rem;
+        font-size: .9rem;
         padding: 2rem;
         word-spacing: 0.3rem;
         line-height: 2rem;
@@ -258,10 +282,12 @@
 
     .imgTitulosSimilares2{
         flex-direction: column;
+        height: 80%;
     }
     .containerImg2{
         display: inline-block;
         width: 100%;
+        height: 60%;
     }
 
     .containerInfo2{
@@ -282,7 +308,7 @@
     }
     .containerParrafoJuego2{
         color: $fontColor;
-        font-size: 1rem;
+        font-size: .9rem;
         padding: 2rem;
         word-spacing: 0.3rem;
         line-height: 2rem;
@@ -293,23 +319,26 @@
 @media only screen and (max-width:700px){
     .imgTitulosSimilares{
         flex-direction: column;
+        height: 60%;
     }
     .containerImg1{
         display: inline-block;
+        position: relative;
         width: 100%;
+        height: 80%;
     }
+
+    .imgDS1{
+        height: 100%;
+    }
+
     .containerInfo1{
-        display: flex;
-        flex-direction: column;
-        background-image: linear-gradient(to bottom, #000000, #080808);
-        display: block;
-        width: 100%;
-        justify-content: flex-start;
-        align-content: center;
+        position: relative;
         h2{
             border-bottom: .2rem solid $goldColor ;
             padding-bottom: 1.3rem;
         }
+   
     }
     .tituloJuego1{
         color: $fontColor;
@@ -324,20 +353,23 @@
         padding: 2rem;
         word-spacing: 0.3rem;
         line-height: 2rem;
-        text-align: center;
+        text-align: center;   
     }
 
     .imgTitulosSimilares2{
         flex-direction: column;
+        height: 60%;
     }
     .containerImg2{
+        position: relative;
         display: inline-block;
         width: 100%;
-        height: 60vh;
+        height: 60%;
     }
 
     .containerInfo2{
         background-position: center;
+        position: relative;
     }
 
     .tituloJuego2{

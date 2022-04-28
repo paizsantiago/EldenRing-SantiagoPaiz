@@ -372,7 +372,7 @@
   width: 30%; }
 
 .imgDS2 {
-  height: 60vh;
+  height: 100%;
   width: 100%; }
 
 .containerInfo2 {
@@ -399,7 +399,7 @@
   line-height: 2rem; }
 
 .imgDS3 {
-  height: 60vh;
+  height: 100%;
   width: 100%; }
 
 .imgBloodBorne {
@@ -407,26 +407,25 @@
   width: 100%; }
 
 .imgDemonS {
-  height: 60vh;
+  height: 100%;
   width: 100%; }
 
 .imgSekiro {
-  height: 60vh;
+  height: 100%;
   width: 100%; }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1600px) {
   .imgTitulosSimilares {
-    flex-direction: row;
-    height: 37rem; }
+    flex-direction: row; }
   .containerImg1 {
     display: inline-block;
-    width: 40%; }
+    width: 45%; }
   .containerInfo1 {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(to bottom, #000000, #080808);
     display: block;
-    width: 60%;
+    width: 55%;
     justify-content: flex-start;
     align-content: center; }
   .tituloJuego1 {
@@ -441,30 +440,37 @@
     word-spacing: 0.3rem;
     line-height: 2rem;
     text-align: start; }
+  .imgDS1 {
+    height: 100%;
+    object-fit: cover; }
   .imgDS3 {
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
   .imgBloodBorne {
     height: 100%; }
   .pruebaBB {
     height: 40rem; }
   .imgDS2 {
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
   .imgDemonS {
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
   .imgSekiro {
-    height: 100%; }
+    height: 100%;
+    object-fit: cover; }
   .imgTitulosSimilares2 {
     flex-direction: row-reverse; }
   .containerImg2 {
     display: inline-block;
-    width: 40%; }
+    width: 45%; }
   .containerInfo2 {
     display: flex;
     flex-direction: column;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.671), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
     background-position: center;
     display: block;
-    width: 60%;
+    width: 55%;
     justify-content: flex-start;
     align-content: center; }
   .tituloJuego2 {
@@ -478,78 +484,21 @@
     padding: 1.5rem;
     word-spacing: 0.3rem;
     line-height: 2rem;
-    text-align: start; } }
+    text-align: start;
+    display: flex; } }
 
 @media only screen and (max-width: 992px) {
   .imgTitulosSimilares {
-    flex-direction: column; }
+    flex-direction: column;
+    height: 60%; }
+  .h1TituloSimilares {
+    font-size: 2.5rem; }
   .containerImg1 {
     display: inline-block;
     width: 100%;
-    height: 40%; }
-  .containerInfo1 {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to bottom, #000000, #080808);
-    display: block;
-    width: 100%;
-    justify-content: flex-start;
-    align-content: center; }
-  .tituloJuego1 {
-    color: #e3e0da;
-    padding: 2rem;
-    font-size: 1.3rem;
-    text-align: center; }
-  .containerParrafoJuego1 {
-    color: #e3e0da;
-    font-size: 1rem;
-    padding: 2rem;
-    word-spacing: 0.3rem;
-    line-height: 2rem;
-    text-align: center; }
-  .imgDS3 {
+    min-height: 100%; }
+  .imgDS1 {
     height: 100%; }
-  .imgBloodBorne {
-    height: 40%; }
-  .imgDS2 {
-    height: 100%; }
-  .imgDemonS {
-    height: 100%; }
-  .imgSekiro {
-    height: 100%; }
-  .imgTitulosSimilares2 {
-    flex-direction: column; }
-  .containerImg2 {
-    display: inline-block;
-    width: 100%; }
-  .containerInfo2 {
-    display: flex;
-    flex-direction: column;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
-    background-position: center;
-    display: block;
-    width: 100%;
-    justify-content: flex-start;
-    align-content: center; }
-  .tituloJuego2 {
-    color: #e3e0da;
-    padding: 2rem;
-    font-size: 1.3rem;
-    text-align: center; }
-  .containerParrafoJuego2 {
-    color: #e3e0da;
-    font-size: 1rem;
-    padding: 2rem;
-    word-spacing: 0.3rem;
-    line-height: 2rem;
-    text-align: center; } }
-
-@media only screen and (max-width: 700px) {
-  .imgTitulosSimilares {
-    flex-direction: column; }
-  .containerImg1 {
-    display: inline-block;
-    width: 100%; }
   .containerInfo1 {
     display: flex;
     flex-direction: column;
@@ -568,19 +517,89 @@
     text-align: center; }
   .containerParrafoJuego1 {
     color: #e3e0da;
+    font-size: .9rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+    text-align: center; }
+  .imgDS3 {
+    height: 100%; }
+  .imgBloodBorne {
+    height: 40%; }
+  .imgDS2 {
+    height: 100%; }
+  .imgDemonS {
+    height: 100%; }
+  .imgSekiro {
+    height: 100%; }
+  .imgTitulosSimilares2 {
+    flex-direction: column;
+    height: 80%; }
+  .containerImg2 {
+    display: inline-block;
+    width: 100%;
+    height: 60%; }
+  .containerInfo2 {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.858), rgba(0, 0, 0, 0.921)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
+    background-position: center;
+    display: block;
+    width: 100%;
+    justify-content: flex-start;
+    align-content: center; }
+  .tituloJuego2 {
+    color: #e3e0da;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center; }
+  .containerParrafoJuego2 {
+    color: #e3e0da;
+    font-size: .9rem;
+    padding: 2rem;
+    word-spacing: 0.3rem;
+    line-height: 2rem;
+    text-align: center; } }
+
+@media only screen and (max-width: 700px) {
+  .imgTitulosSimilares {
+    flex-direction: column;
+    height: 60%; }
+  .containerImg1 {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 80%; }
+  .imgDS1 {
+    height: 100%; }
+  .containerInfo1 {
+    position: relative; }
+    .containerInfo1 h2 {
+      border-bottom: 0.2rem solid #a9905b;
+      padding-bottom: 1.3rem; }
+  .tituloJuego1 {
+    color: #e3e0da;
+    padding: 2rem;
+    font-size: 1.3rem;
+    text-align: center; }
+  .containerParrafoJuego1 {
+    color: #e3e0da;
     font-size: 1rem;
     padding: 2rem;
     word-spacing: 0.3rem;
     line-height: 2rem;
     text-align: center; }
   .imgTitulosSimilares2 {
-    flex-direction: column; }
+    flex-direction: column;
+    height: 60%; }
   .containerImg2 {
+    position: relative;
     display: inline-block;
     width: 100%;
-    height: 60vh; }
+    height: 60%; }
   .containerInfo2 {
-    background-position: center; }
+    background-position: center;
+    position: relative; }
   .tituloJuego2 {
     color: #e3e0da;
     padding: 2rem;
