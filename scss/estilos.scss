@@ -121,7 +121,7 @@
     }
     .containerBackground{
         height: 100vh;
-        background-image: linear-gradient(rgba(8, 8, 8, 0.534), rgb(0, 0, 0)),url(../img/EldenRingBackground.jpeg);
+        background-image: linear-gradient(rgba(8, 8, 8, 0.534), rgb(0, 0, 0)),url(../img/EldenRingBackground.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -143,6 +143,7 @@
         animation-name: fadeImgTitulo;
         animation-iteration-count: initial;
         animation-duration: 6s;
+        opacity: 90%;
     }
     .containerDecoration{
         background-color: rgb(0, 0, 0);

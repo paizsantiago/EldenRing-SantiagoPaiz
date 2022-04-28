@@ -57,7 +57,7 @@
   text-shadow: 0rem 0rem 0.1rem #a9905b;
   word-spacing: .5rem;
   line-height: 1.4;
-  background-image: linear-gradient(to left, #080808, transparent);
+  background-image: linear-gradient(to right, #080808, transparent);
   border-radius: 0.1rem;
   align-self: center; }
   .parrafolore2 p {
@@ -857,7 +857,7 @@ footer {
 
 .containerBackground {
   height: 100vh;
-  background-image: linear-gradient(rgba(8, 8, 8, 0.534), black), url(../img/EldenRingBackground.jpeg);
+  background-image: linear-gradient(rgba(8, 8, 8, 0.534), black), url(../img/EldenRingBackground.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -875,7 +875,8 @@ footer {
   width: 100vh;
   animation-name: fadeImgTitulo;
   animation-iteration-count: initial;
-  animation-duration: 6s; }
+  animation-duration: 6s;
+  opacity: 90%; }
 
 .containerDecoration {
   background-color: black;

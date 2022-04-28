@@ -60,7 +60,7 @@
     text-shadow: map-get($map: $shadows, $key:shadowText);
     word-spacing: .5rem;
     line-height: 1.4;
-    background-image: linear-gradient(to left, #080808, transparent );
+    background-image: linear-gradient(to right, #080808, transparent );
     border-radius: 0.1rem;
     align-self: center;
     p{
