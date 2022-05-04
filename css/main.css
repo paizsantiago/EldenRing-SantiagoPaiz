@@ -316,10 +316,8 @@
     width: 11rem; } }
 
 .containerTitulosSimilares {
-  background-image: linear-gradient(#080808, rgba(8, 8, 8, 0.76)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center; }
+  background-color: #080808;
+  overflow: hidden; }
 
 .h1TituloSimilares {
   color: #a9905b;
@@ -448,7 +446,7 @@
     object-fit: cover; }
   .imgBloodBorne {
     height: 100%; }
-  .pruebaBB {
+  .mediaQBB {
     height: 40rem; }
   .imgDS2 {
     height: 100%;
@@ -730,11 +728,13 @@ input {
 
 @media only screen and (max-width: 992px) {
   .form {
-    width: 50%;
+    width: 60%;
     height: 80%;
     font-size: .9rem;
     margin: 0;
     padding: 1rem; }
+  .imgContacto {
+    width: 40%; }
   .botones {
     display: flex;
     flex-direction: column;
@@ -744,9 +744,6 @@ input {
 @media only screen and (max-width: 700px) {
   .logoMobile {
     height: 3.5rem; }
-  .menu {
-    display: inline-block;
-    padding: .8rem; }
   .containerGeneral {
     height: 80vh;
     width: 100%; }

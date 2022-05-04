@@ -148,11 +148,15 @@ input{
 
 @media only screen and (max-width:992px){
     .form{
-        width: 50%;
+        width: 60%;
         height: 80%;
         font-size: .9rem;
         margin: 0;
         padding: 1rem;
+    }
+
+    .imgContacto{
+        width: 40%;
     }
     .botones{
         display: flex;
@@ -168,10 +172,6 @@ input{
         height: 3.5rem;
     }
     
-    .menu{
-        display: inline-block;
-        padding: .8rem;
-    }
     .containerGeneral{
         height: 80vh;
         width: 100%;

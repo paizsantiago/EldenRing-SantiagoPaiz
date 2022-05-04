@@ -2,10 +2,8 @@
 // inicio
 
 .containerTitulosSimilares{
-    background-image:linear-gradient(rgb(8, 8, 8), rgba(8, 8, 8, 0.76)), url(../img/elden-ring-wiki-screenshot-art-trailer5.jpg);
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:center;
+    background-color: #080808;
+    overflow: hidden;
 }
 .h1TituloSimilares{
     color:$goldColor;
@@ -19,6 +17,8 @@
 .imgTitulosSimilares{
     display: flex;
 }
+
+
 .containerImg1{
     display: inline-block;
     width: 30%;
@@ -156,7 +156,7 @@
 
     }
 
-    .pruebaBB{
+    .mediaQBB{
         height: 40rem;
 
     }
