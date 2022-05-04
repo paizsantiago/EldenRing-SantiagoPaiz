@@ -7,7 +7,8 @@ Buenas Fede,
   Elden Ring ya que se habia estrenado hace unos dias.
   Ya con la idea principal en mente lo demas salío solo.
   
-  Pd: un gusto tenerte de profe!
+  Pd: la pagina esta en ingles porque la fuente no contaba con letras con tíldes.
+  Pd2: un gusto tenerte de profe!
   
   Saludos fede, pam pam pam
   Santiago.
